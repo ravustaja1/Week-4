@@ -16,7 +16,7 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 6px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
 }
 
 .show-data h1 {
@@ -30,4 +30,25 @@ body {
 
 .show-info {
     width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .show-data {
+        display: flex;
+    }
+
+    .show-info {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .show-data img {
+        margin: auto;
+    }
+
+    .show-info p {
+        text-align: center;
+        padding: 10px;
+    }
 }
