@@ -22,7 +22,7 @@ function displayShow(data) {
         const image = show.image ? show.image.medium : '';
 
         element.innerHTML = `
-            <img src="${image}" alt="${show.name}">
+            <img src="${image}">
             <div class="show-info">
                 <h1>${show.name}</h1>
                 ${show.summary}
